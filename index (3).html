@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joyeux Anniversaire Léandra 😎❤️</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #ffb6c1, #ff69b4, #ff1493);
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        text-align: center;
+        color: #330033;
+    }
+    h1 {
+        margin-top: 40px;
+        font-size: 3rem;
+        animation: fade 2s ease-in-out;
+    }
+    p {
+        width: 80%;
+        margin: auto;
+        font-size: 1.3rem;
+        line-height: 1.6;
+    }
+    .heart {
+        font-size: 3rem;
+        animation: beat 1s infinite;
+    }
+    @keyframes beat {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.3); }
+        100% { transform: scale(1); }
+    }
+    @keyframes fade {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+    button {
+        margin-top: 30px;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 25px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        background: #ff1493;
+        color: white;
+        transition: 0.3s;
+    }
+    button:hover {
+        background: white;
+        color: #ff1493;
+    }
+    #message-secret {
+        margin-top: 20px;
+        font-size: 1.8rem;
+        font-weight: bold;
+        display: none;
+        color: #ff4500;
+    }
+</style>
+</head>
+<body>
+
+<h1>🎉 Hé Léandra ! Joyeux Anniversaire 😎❤️</h1>
+
+<p>
+Alors voilà, aujourd’hui c’est ton jour, et je voulais te dire un truc super sérieux.<br><br>
+Tu es géniale, drôle vite fait, belle, et franchement t'es stylax un max.
+</p>
+
+<div class="heart">💖</div>
+
+<p>
+Je t’aime un peu, beaucoup… enfin, énormément quand même 😘✨
+</p>
+
+<button onclick="montreMessage()">Clique ici pour le message secret 😈</button>
+
+<div id="message-secret">
+    Prends pas trop la confiance, connasse 😎<br><br>
+    Non mais je t'aime bien quand même ❤️
+</div>
+
+<script>
+function montreMessage() {
+    document.getElementById("message-secret").style.display = "block";
+}
+</script>
+
+</body>
+</html>
